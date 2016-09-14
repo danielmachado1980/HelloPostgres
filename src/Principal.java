@@ -7,7 +7,6 @@ public class Principal {
 	public static void main(String[] args) {
 		System.out.println("-------- PostgreSQL "
 				+ "JDBC Teste de Conexão ------------");
-
 		try {
 
 			Class.forName("org.postgresql.Driver");
@@ -15,7 +14,7 @@ public class Principal {
 		} catch (ClassNotFoundException e) {
 
 			System.out.println("Onde está seu PostgreSQL JDBC Driver? "
-					+ "Inclua-o ao build path!");
+					+ "Inclua-o ao Build Path!");
 			e.printStackTrace();
 			return;
 
