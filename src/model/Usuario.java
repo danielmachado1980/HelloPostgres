@@ -7,21 +7,12 @@ public class Usuario {
 	private String _senha;
 	private int _pontos;
 	
-	public Usuario(String login, String email, String nome, String senha, int pontos) {
-		super();
-		this._login = _login;
-		this._email = _email;
-		this._nome = _nome;
-		this._senha = _senha;
-		this._pontos = _pontos;
-	}
-
 	public String get_login() {
 		return _login;
 	}
 
 	public void set_login(String login) {
-		this._login = _login;
+		this._login = login;
 	}
 
 	public String get_email() {
@@ -29,7 +20,7 @@ public class Usuario {
 	}
 
 	public void set_email(String email) {
-		this._email = _email;
+		this._email = email;
 	}
 
 	public String get_nome() {
@@ -37,7 +28,7 @@ public class Usuario {
 	}
 
 	public void set_nome(String nome) {
-		this._nome = _nome;
+		this._nome = nome;
 	}
 
 	public String get_senha() {
@@ -45,7 +36,7 @@ public class Usuario {
 	}
 
 	public void set_senha(String senha) {
-		this._senha = _senha;
+		this._senha = senha;
 	}
 
 	public int get_pontos() {
@@ -53,6 +44,12 @@ public class Usuario {
 	}
 
 	public void set_pontos(int pontos) {
-		this._pontos = _pontos;
+		this._pontos = pontos;
 	}
+
+	@Override
+	public String toString() {
+		return "Usuario [_login=" + _login + "]";
+	}
+	
 }
