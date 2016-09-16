@@ -9,9 +9,9 @@ public class Principal {
 	public static void main(String[] args) {
 		UsuarioDAOImpl dao = new UsuarioDAOImpl();
 		//List<Usuario> usuarios = new ArrayList<>();
-		Usuario usuario = new Usuario();
-		usuario = dao.recuperar("daniel");
-		System.out.println(usuario);
+		//Usuario usuario = new Usuario();
+		dao.adicionarPontos("lidia", 10);
+		//System.out.println(usuario);
 		//for(Usuario usu : usuarios){
 		//	System.out.println(usu);
 		//}
