@@ -14,20 +14,20 @@ public class UsuarioDAOImpl extends BaseDAO implements UsuarioDAO {
 	
 	@Override
 	public void inserir(Usuario u) {
-		// TODO Auto-generated method stub
+		String sql = "INSERT INTO usuario(login, email, nome, senha, pontos) VALUES (?, ?, ?, ?, ?)";
 		
 
 	}
 
 	@Override
 	public Usuario recuperar(String login) {
-		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM usuario WHERE login = ?";
 		return null;
 	}
 
 	@Override
 	public void adicionarPontos(String login, int pontos) {
-		// TODO Auto-generated method stub
+		String sql = "UPDATE usuario SET pontos = pontos + ? WHERE login = ?";
 
 	}
 		
