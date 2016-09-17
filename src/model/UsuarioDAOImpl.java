@@ -22,7 +22,6 @@ public class UsuarioDAOImpl extends BaseDAO implements UsuarioDAO {
 			stm.setInt(5, u.get_pontos());
 			stm.executeUpdate();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -42,7 +41,6 @@ public class UsuarioDAOImpl extends BaseDAO implements UsuarioDAO {
 			usuario.set_senha(rs.getString("senha"));
 			usuario.set_pontos(rs.getInt("pontos"));
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return usuario;
@@ -57,7 +55,6 @@ public class UsuarioDAOImpl extends BaseDAO implements UsuarioDAO {
 			stm.setString(2, login);
 			stm.executeUpdate();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -79,7 +76,6 @@ public class UsuarioDAOImpl extends BaseDAO implements UsuarioDAO {
 				lstUsuarios.add(usuario);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return lstUsuarios;
